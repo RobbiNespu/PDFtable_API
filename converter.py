@@ -11,7 +11,7 @@ if int(r.text) == 0:
     exit()
 else:
     c = pdftables_api.Client('mlnolmd51ohn')
-    os.chdir("/home/robbi/Documents/workplace/python/PDFtable_API")
+    os.chdir("D:\Workspaces\Python\PDFtable_API\convert")
     for file in glob.glob("*.pdf"):
         print("Converting "+file+ " to excell")
         c.xlsx(file,file+".xlsx")
